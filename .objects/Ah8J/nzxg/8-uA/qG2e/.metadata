@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Accept",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "qG2e-dDYmEmupa_yDiNeGA",
+  "Reference": "oJEcf582K0aKajFI4FMBDA/qG2e-dDYmEmupa_yDiNeGA",
+  "ParentRef": "oJEcf582K0aKajFI4FMBDA/8-uALctbSEyMNgAhf0ubnQ",
+  "Created": "2025-06-28T12:54:28.2504536Z",
+  "Updated": "2025-06-28T12:54:28.2504536Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
