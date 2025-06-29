@@ -37,6 +37,15 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection.Contracts</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -80,21 +89,26 @@
       <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
       <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1216.6666666666665,1182" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1216.6666666666665,1187.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="UIDemo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1159.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d6677c78-f9a9-48eb-b2fe-2c99283f5fc9" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="UIDemo" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1164.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d6677c78-f9a9-48eb-b2fe-2c99283f5fc9" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,865.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,870.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -148,7 +162,7 @@
                 </uix:VerifyExecutionTypeIntoOptions>
               </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Accept'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Accept'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable CVScreenId="22aea0db-3a47-4849-b3f6-fdeb923ac52d" ContentHash="Enz0f3oY2kCUU7dbHT4A8w" CvElementArea="657, 815, 124, 49" CvTextArea="690, 831, 58, 21" CvTextArgument="Accept" CvType="Button" DesignTimeRectangle="661, 818, 120, 46" DesignTimeScaleFactor="1.5" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='Accept' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Accept' /&gt;" Guid="ce5c7fd4-6483-4676-9862-4a8c0d25bff9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAyCAYAAACeTL+iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAARQSURBVHhe7ZzfS1tnGMffnJiIsRfqWu2oa29kXaWgtF6IhbqCN8MyLKw/HQvYtFBombRYGW6k2NC0aKGbQplJCTSQiyJlbl4IYbbKDLZaR9motR7/Bf+F756TnJOcxBN7UoZN8j4Xn4s355uTw/mc93mf91xEbG5ugpEHFi4ZaeH9/f1MGWMpPBqNIpFIMGWE5jSv8IWFBWxsbDBlhOaUhUsEC5cMFi4ZLFwyWLhksHDJYOGSwcIlg4VLBguXDBYuGSxcMli4ZJSM8NWYDzVCwLHnCp6sWWeKlbXFSfhPDiBmcWynKRHhq4j5auDYuxcNogqnQ68tMsWKiri/BaLCi6jl8Z2lJISrKw/R43KgaeA+bjYJODtHsWCRK05YeIGoWBnvhnDU49rkOqZvNkEohzA0Y51dfnoX59rr4aHyL0Q1Gjq+xcjUqwIzG/j3z19xcbuMGoe/RaDCG8FcqA9Hal2Uc6Ou+RRuP32BtWTuHSLnte9nqPBGM+f4CBS/cHUewQ5au+uvYZLGatyPFuHAnitP9JtqoGIpcoFKvoB7/5f4fiSM0L2rON5IIirbEZy1n/n7cR8aXQK7WnsxPEaZX27h3GEPPXT74I3q0nXhyWXGvR8nfxijnB/ffE7nopwvpi07Kv76LYQ7Zw5AODtxIxzGo98Tqe9/JIpeuCG4aXA69Zlxo3Obt/XpZLlXvhjEtOlzdWkc3Z46tP70R0GZqp5xvDCfX13CeLcLyqEhzCTHqevIegg03k7huvYbRo6kc0m3jVUJVzEf7KDymN28qc+GcVQoaAvMpj/LxU5mfWYIzZRpufQzwjQjM+gzVWlDQKsEunClLYDZrHPoghWqGHOmMQu3wWoMvhrzbEmhzgfRQWXZ3Ly9e/wdXKKCZlsml4utTOR81pq7FQ+Va8qm1/Cta3LqHMbvsHDbGHtv6xtPmGZ+9k225v/KJHmvcP3BYOE2UVfwsIcaIOUgvKPm0ppi4sYJmq2Z5i1vuVafYfhoNT69MIElG5mXU9dxwNwz5EMX7ux6gMWsY7pgZxceLJrGLHx71BVqpGgW591z6+VeVJ1G6DWN8zRkb2d+pKZPl1xAxrG7F5FXmYzWtIXO1MK9+ywmlrWx3rTRmn4rvpbJ/UPX1WC+bhZuA+vGLBu9oRNOdI5q15nZclU2n01tp+714bCH5O3zIaY9FAVmxK5WXNK2brQtu3i8kSpKJdoD8dR20BCu53qHtW3ZIL7St3iB9EOgIjHSSd38J+gaGONtmSXGLHvPe/OtzVvOSxV3HZpP3caUeaZ+SEa4UfvZMVwOP8cbI6MLV9r8eDT6NQ4mX7xUo+HYZYSfvzGdi65zOYarR2rpgaF8exBzpmM7TZHO8BIgLTx3W1bcsPAPhYVLBguXDBbOlAIsXDJYuGSwcMlg4ZLBwiWDhUsGC5cMFi4ZLFwyWLhkbCuc/3qz/Nj2rzeZ8mWLcEYOWLhUbOI/LUUuawu+rG8AAAAASUVORK5CYII=" InformativeScreenshot="a660da7021b16b1ad57521ae7f391fee.png" Reference="oJEcf582K0aKajFI4FMBDA/qG2e-dDYmEmupa_yDiNeGA" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UIDemo' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
